@@ -195,7 +195,7 @@ int main(int argc, char **argv)
 	else if (!strcmp(from, "f64"))
 		view.f64.val = strtod(str, NULL);
 	else if (!strcmp(from, "fmax"))
-		view.fmax = strtod(str, NULL);
+		view.fmax = strtold(str, NULL);
 	else {
 		fprintf(stderr, "Unsupported input format: %s\n", from);
 		return 1;
